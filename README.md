@@ -4,6 +4,10 @@ Pull request are welcomed. Please follow the Airbnb style guide [Airbnb JavaScri
 
 [Try it with Exponent](https://exp.host/@jacklam718/toolbar-demo)
 
+##### Preview
+<img src="https://jacklam718.github.io/react-native-toolbar-component/assets/toolbar-screenshot.png" width="250">
+
+
 ## Installation
 ###### yarn
 `yarn add react-native-toolbar-component`
