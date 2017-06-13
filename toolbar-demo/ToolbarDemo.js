@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet, StatusBar } from 'react-native';
-import ToolbarComponent from 'react-native-toolbar-component';
+import ToolbarComponent from './src/ToolbarComponent';
 
 const styles = StyleSheet.create({
   container: {
@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   toolbar: {
-    backgroundColor: 'black',
+    backgroundColor: 'red',
   },
 });
 
@@ -22,9 +22,12 @@ export default class ToolbarDemo extends Component {
       <View style={styles.container}>
         <StatusBar barStyle="light-content" />
         <ToolbarComponent
+          foreground="light"
           style={styles.toolbar}
+          title="Title"
           leftItem={{
             title: 'Left',
+            icon: require('./img/x-white.png'),
             layout: 'title',
             onPress: () => {
               console.log('pressed');
@@ -37,13 +40,7 @@ export default class ToolbarDemo extends Component {
               console.log('pressed');
             },
           }}
-        >
-          <View>
-            <Text style={styles.title}>
-              Title
-            </Text>
-          </View>
-        </ToolbarComponent>
+        />
       </View>
     );
   }
