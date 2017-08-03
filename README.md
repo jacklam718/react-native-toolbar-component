@@ -30,7 +30,7 @@ import ToolbarComponent from 'react-native-toolbar-component';
       console.log('pressed');
     },
   }}
-  righttem={{
+  rightItem={{
     title: 'Right',
     layout: 'title',
     onPress: () => {
@@ -43,3 +43,7 @@ import ToolbarComponent from 'react-native-toolbar-component';
   </Text>
 </ToolbarComponent>
 ```
+
+### Android vs iOS
+
+`leftItem` does not show up on Android, since it uses the native android Toolbar widget under the hood. However you can specify additional menu items for android using the `extraItems` prop.
